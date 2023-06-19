@@ -1,0 +1,76 @@
+{%extends 'main.html'%}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block style%}
+    {{block.super}}
+    {%endblock style%}
+    <title>Document</title>
+</head>
+<body>
+    {%block navbar%}
+    <div class="content-header">
+    <header>
+      <nav>
+      
+        <ul>
+          <div class="currentUser-div">
+            <li><h1>{{currentUser}}</h1></li>
+          </div>
+        </ul>
+  
+      </nav>
+    </header>
+    </div>
+
+    {%endblock navbar%}
+
+
+    {%block content%}
+      <div class="content-div">
+        <h1 class="welcome-users">Welcome {{currentUser}}, we are glad that you are here </h1>
+        <div class="usertable-div">
+          <table class="table">
+            <div class="head-row">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">Is staff</th>
+                </tr>
+            </thead>
+            </div>
+        
+        
+            <tbody>
+              <tr>
+                <td>{{ids.0}}</td>
+                <td>{{users.0}}</td>
+                <td> {{is_staff.0}}</td>
+
+              </tr>
+              <tr>
+                <td>{{ids.1}}</td>
+                <td>{{users.1}}</td>
+                <td> {{is_staff.1}}</td>
+
+              </tr>
+              <tr>
+                <td>{{ids.2}}</td>
+                <td>{{users.2}}</td>
+                <td> {{is_staff.2}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+ 
+    {%endblock content%}
+  
+</body>
+</html>

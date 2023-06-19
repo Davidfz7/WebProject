@@ -1,0 +1,100 @@
+.div-form{
+
+    width: 20rem;
+    display: inline-block;
+ }
+ .form-group{
+     margin: -10px -10px -10px -10px;
+     
+ }
+ .line-div{
+     border: solid;
+     width: 20rem;
+     margin-left: -15px;
+     margin-bottom: 20px;
+ }
+ .h1-newaccount, .h1-newaccount h1{
+     font-family: Arial, Helvetica, sans-serif;
+     display: inline-block;
+     font-size: 28px;
+ }
+ .label-form{
+     vertical-align: top;
+     width: 100px;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-right: 0px;
+ }
+ .input-form{
+     width: 190px;
+     margin-top: 10px;
+     margin-right: 3px;
+     padding-left: 10px;
+     margin-left: 0;
+     display: inline-block;
+   
+ }
+ 
+ .div-button{
+     margin-top: 8px;
+     margin-left: 15rem;
+     margin-bottom: 14px;
+     display: inline-block;
+
+ }
+ .form-group{
+ 
+     line-height: 50px;
+ }
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+ }
+ .submit-button{
+     background-color: green;
+     border-color: none;
+     border-style: none;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 16px;
+     padding-right: 16px;
+     border-radius: 10px;
+     cursor: pointer;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+ }
+ .h1-loginaccount{
+
+    padding-left: 42px;
+ }
+ .submit-button:hover{
+     opacity: 0.8;      
+     }
+ .submit-button:active{
+     
+     box-shadow: 0px 0px 10px green;
+ }
+ label{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+ }
+ 
+ .label-form{
+     display: inline-block;
+     margin-right: 10px;
+ }
+ .input-form{
+     display:flex;
+     display: inline-block;
+     justify-content: center;
+ }
+ 
+ .input-form input{
+     height: 30px;
+     
+ }
+ 

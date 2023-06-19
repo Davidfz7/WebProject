@@ -1,0 +1,101 @@
+.main-header{
+    background-color: green;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-left: 68rem;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.list-div a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+
+}
+.list-div a:hover{
+    color: rgb(145, 145, 145);
+    transition: color 1s;
+}
+.list-div{
+
+    float: right;
+}
+
+footer{
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 100, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: ar;
+
+}
+
+footer ul{
+
+    list-style-type: none;
+}
+.welcome-users{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-row{
+    background-color: rgb(3, 220, 3);
+}
+
+.hola{
+    border-collapse: separate;
+    background-color: rgb(3, 220, 3);
+
+}
+
+.content-header{
+    display: block;
+
+    padding-left: 112rem;
+
+
+}
+.content-header h1, li{
+
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.content-div{
+    margin-top: 100px;
+}
+
+.currentUser-div{
+
+    position: fixed;
+    top: 0px;
+    right: 10px;
+}
+body{
+    justify-content: center;
+
+}
+.usertable-div table{ 
+    margin: 0 auto;
+    /* margin-left: 50rem; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border: solid black;
+    column-gap: 200px;
+}
+
+.usertable-div td{
+
+padding: 2px 30px;
+
+}

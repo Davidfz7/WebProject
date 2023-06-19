@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhateverWorld</title>
+    {% block style%}
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    {%endblock style%}
+    {%block script%}
+    {%endblock script%}
+  </head>
+<body>
+  {% block navbar %}
+  
+  <div class="main-header">
+    <header>
+        <nav>
+          <div class="list-div">
+          <ul style="display: flex;">
+            <li  style="margin-right: 30px; list-style: none;"><a href="{% url 'home' %}">Register</a></li>
+            <li style="margin-right: 30px; list-style: none;" ><a href="{% url 'profiles' %}">Login</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+</div>
+  {% endblock navbar %}
+  
+  {% block content %}{% endblock content %}
+
+
+    
+      
+  {% block footer %}
+ <footer>
+  <p style="font-family: Arial;">Contáctame:</p>
+  <ul>
+    <li>GitHub: <a href="https://github.com/Davidfz7" target=”_blank”>https://github.com/Davidfz7 </a></li>
+    <li>Email: <a href="mailto:david123.dd212@gmail.com" target=”_blank”>david123.dd212@gmail.com</a></li>
+  </ul>
+</footer>
+  {% endblock footer %} 
+ </body>
+</html>
