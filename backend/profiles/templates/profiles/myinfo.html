@@ -1,0 +1,68 @@
+{% extends "main.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} T2 ProfileACC {% endblock title %}
+    {%block style%}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static 'profiles/css/style.css' %}">
+    {%endblock style%}
+    {%block script%}
+    <script src="{% static 'profiles/js/profile.js'%}"></script>
+    {%endblock script%}
+    
+</head>
+<body>
+    {% block navbar %}
+
+    <div class="selectOp">
+        <ul class="itemsOp">
+            <li>Overview</li>
+            <li>Agents</li>
+            <li>Matches</li>
+        </ul>
+    </div>
+     
+    <div class="user_left_nav">
+        <div class="img-user" id= "img-user" onmouseleave="stopShowing()">
+            <span>{{current_user}}</span>
+            <img id="profile_pic" src="{{current_user.profile_pic.url}}" alt="theGoat" onclick="imgDropList()" >
+            
+            <ul class="drpOps" id="drpOps">
+                <li><a href="#">Change pc</a></li>
+                <li><a href="#">Upload status</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul> 
+        </div>
+     
+
+    </div>
+   
+
+    {% endblock navbar %}
+
+ 
+    {% block content %}
+    <div class="modify-pp-div">
+        <div class="form-modifypp-div">
+            <form class="form-modifypp" action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="file">Choose the file</label>
+                <input type="file" name="file">
+                <button type="submit" class="complete" onclick="modifyPic()">Submit</button>
+            </form>
+    
+
+        </div>
+   
+    </div>
+
+
+
+    {% endblock content %}
+</body>
+</html>

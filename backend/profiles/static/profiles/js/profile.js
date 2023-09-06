@@ -8,6 +8,20 @@ function checkForm(){
     }else{
         return true;
 
-    }
+    } 
+}
+
+function imgDropList() {
+
+    const element = document.getElementById('drpOps')
+    element.style.display = 'inline-block';
+   
   
 }
+function stopShowing() {
+
+    const element = document.getElementById('drpOps')
+    element.style.display = 'none';
+  
+}
+

@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhateverWorld</title>
+  
+    
+    <title>{% block title%} WhateverWorld {% endblock title%}</title>
+    
     {% block style%}
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     {%endblock style%}
@@ -30,10 +33,7 @@
   {% endblock navbar %}
   
   {% block content %}{% endblock content %}
-
-
-    
-      
+   
   {% block footer %}
  <footer>
   <p style="font-family: Arial;">Contáctame:</p>

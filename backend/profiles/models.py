@@ -34,6 +34,7 @@ class ProfileModel(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
     admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
+    profile_pic = models.ImageField(upload_to='images/', null=True, blank=True)
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
     objects = ProfileManager()
@@ -49,3 +50,4 @@ class ProfileModel(AbstractBaseUser):
         "Does the user have permissions to view the app `app_label`?"
         # Simplest possible answer: Yes, always
         return True
+

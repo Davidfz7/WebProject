@@ -51,7 +51,9 @@
    justify-content: center;
    align-items: center;
    height: 90vh;
- }
+   /* border: solid black; */
+ } 
+
  .submit-button{
      background-color: green;
      border-color: none;
@@ -64,7 +66,6 @@
      cursor: pointer;
      color: white;
      font-family: Arial, Helvetica, sans-serif;
- 
  
  }
  .h1-loginaccount{
@@ -98,3 +99,229 @@
      
  }
  
+.navP {
+    color: #ffffffbf;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0px;
+    border: solid black;
+}
+
+.aver {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   top: 10rem;
+   text-align: center;
+   display: block;
+   background-color: greenyellow;
+   border: black solid;
+}
+
+.maria{
+    padding: 0px;
+    display: block;
+
+}
+.navP ul{
+    position: absolute;
+    list-style: none;
+
+}
+.navP li{
+    border: solid green;
+    margin-left: 7px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.crt_usr{
+
+    border: black solid;
+    display: inline-block;
+    margin-top: 5px;
+    position: absolute;
+    top: 20px;
+    height: 40px;
+    bottom: 23px;
+    padding-right: 15px;
+    left: 15%;
+
+}
+
+.crt_usr p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upright{
+    padding: 0px;
+    margin-bottom: 10px;
+
+}
+.imgPC{
+    width: 100%;
+    height: 80px;
+    border-radius: 75%; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.imgPCC img{
+    margin-bottom: 0px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 80px; /* Ajusta el ancho de la imagen de perfil */
+    height: 80px; /* Ajusta la altura de la imagen de perfil */
+    border-radius: 50%; /* Aplica un borde redondeado para que se vea como una imagen de perfil circular */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    top: 8px;
+    
+  
+} 
+
+
+.user_lft{
+    border: solid black;
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    width: 250px;
+    height: 400px;
+    right: 15px;
+    
+   
+}
+.itemsOp{
+    
+    list-style: none;
+    position: absolute;
+    left: 3rem;
+    right: 1rem;
+    
+}
+
+.itemsOp li{
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+
+.selectOp{
+    width: 30rem;
+    height: 50px;
+    /* border: solid black; */
+    display: inline-block;
+    position: absolute;
+    top: 10rem;
+ 
+}
+
+
+.drpOps{
+    position: absolute;
+    right: 20px;
+    /* border: black solid; */
+    top: 100px;
+    width: 100px;
+    right: 0px;
+    display: none;
+    background-color: aquamarine;
+
+}
+
+.drpOps li{
+    margin-top:10px ;
+    padding-top: 10px;
+    
+}
+
+
+.user_left_nav{
+
+    position: fixed;
+    /* border: solid black; */
+    height: 300px;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+    
+
+}
+.img-user {
+    top: 10px;
+    left: 80px;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    /* border: solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-user span{
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+.img-user img{
+   position: absolute;
+   display: inline-block;
+   width: 50%;
+   height: 100px;
+   border-radius: 50%;
+   left: 100px;
+   
+}
+
+.modify-pp-div{
+    
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    /* border: solid black; */
+    background-color: green;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+}
+.form-modifypp-div{
+    position: absolute;
+    border: solid black;
+    height: 10rem;
+    width: 20rem;
+    right: 10rem;
+    top: 5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-modifypp{
+
+    position: absolute;
+    
+    
+    
+}
+
+.form-modifypp label{
+    
+   margin-left: 90px;
+    
+}
+.form-modifypp input{
+    margin-top: 30px;
+    margin-left: 90px;
+     
+ }
+ 
+
+ .form-modifypp button{
+    margin-top: 30px;
+    margin-left: 125px;
+     
+ }
+ 
+
