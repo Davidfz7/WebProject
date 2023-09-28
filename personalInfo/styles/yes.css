@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+.main-container{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 80vh 1fr;
+  margin: 0px;
+  padding: 0px;
+  column-gap: 5px;
+  padding: 5px;
+  row-gap: 5px;
+  background-color: rgb(41, 41, 41);
+}
+
+.profile-nav{
+  display: flex;
+  height: 91px;
+  grid-column: 1/ span 2;
+  background-color: rgb(26, 26, 26);
+  border-radius: 2%;
+  box-shadow: 5px 5px 20px  rgb(10, 10, 10);
+
+
+}
+.mobile-nav{
+  grid-column: 1/span 2;
+  display: none;
+  height: 50px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 2%;
+  box-shadow: 5px 5px 20px  rgb(10, 10, 10);
+
+}
+.profile-nav div{
+  align-self: center;
+  margin-right: 2px;
+}
+
+.profile-card{
+ 
+  height: 100vh;
+  margin-top: 5%;
+  border-radius: 3%;
+  background-color: rgb(22, 21, 21); 
+  
+}
+.background_image{
+  
+  width: 100%;
+  
+  background-color: rgb(5, 5, 150);
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  z-index: 0;
+  height: 13%;
+}
+.profile-stadistics{
+  border: solid white;
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 3%;
+}
+
+.all-info{
+  grid-column: 1/span 2;
+  height: 60vh;
+  border: solid white;
+}
+.navbar-brand{
+
+  font-family: 'Francois One', 'Arial';
+  align-self: center;
+  padding: 0;
+  font-size: 91px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  color: rgb(247, 248, 208);
+  margin-right: 50px;
+}
+
+.navbar-brand::selection{
+  opacity: 0;
+}
+
+.navbar-brand:hover{
+  cursor: default;
+}
+
+.nav-options{
+
+  border-left: solid white;
+  border-right: solid white;
+  border-left-style: dotted;
+  border-right-style: dotted;
+  display: flex;
+  height: 100%;
+  gap: 10em;
+  font-size: 30px;
+  width: 100%;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+
+}
+
+.nav-options a::selection{
+  opacity: 0;
+}
+
+.nav-options a{
+
+    font-family: 'Francois One', 'Arial';
+    text-decoration: none;
+    align-self: center;
+    
+}
+
+.search-option{
+  height: 100%;
+  width: auto;
+  display: flex;
+  gap: 5px;
+  padding: 3em;
+
+}
+.mr-sm-2{
+  align-self: center;
+  width: 200px;
+}
+.my-sm-0{
+  width: 200px;
+  align-self: center;
+  width: auto;
+}
+
+.button-mobile{
+  display: none;
+
+}
+
+.image-card{
+  position: absolute;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 5px 5px 20px  rgb(10, 10, 10);
+  height: 20%;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: -6%;
+}
+
+.card-info{
+  margin-top: 15%;
+  height: 73%;
+  width: 97%;
+  margin-left: 1.5%;
+  border-radius: 3%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px){
+  .mobile-nav{
+    display: none;
+   
+  }
+  .button-mobile{
+    flex-direction: column;
+    align-self: center;
+    display: flex;
+    height: 75%;
+    width: auto;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    
+    
+  }
+  .button-mobile div{
+    border-bottom: solid rgb(247, 248, 208);
+    border-bottom-width: 5px;
+    width: 40px;
+    height: 30px;
+  
+  }
+  .nav-options, .search-option{
+    display: none;
+  }
+  .navbar-brand{
+    margin-left: calc(39% + 1px);
+    margin-right: 20%;
+  }
+  .nav-options-mobile{
+
+    border: none;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    font-size: 20px;
+    width: auto;
+    align-self: center;
+    align-items: center;
+    font-family: 'Francois One', 'Arial';
+    margin-left: 18%;
+  
+  }
+  .nav-options-mobile a{
+    text-decoration: none;
+    
+  }
+  
+  .profile-card{
+    grid-column: 1/ span 2;
+    display: flex;
+    
+  }
+  
+  .image-card{
+    border: solid rgb(0, 0, 0);
+    border-style: groove;
+    box-shadow: 5px 5px 20px  rgb(10, 10, 10);
+    height: 70%;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 3%;
+    
+  }
+
+  .image-card img:hover{
+    opacity: 0.5;
+    color: black;
+    transition: opacity 2s;
+  
+  }
+  .card-info{
+    display: flex;
+    height: 70%;
+    width: 50%;
+    margin-top: 3%;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 3%;
+    
+  }
+  .modify-pp{
+ 
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 20%;
+    border-radius: 10%;
+    font-family: 'Francois One', 'Arial';
+    color: transparent;
+
+  }
+  .card-info span{
+     margin-bottom: 20%;
+     color: rgb(255, 255, 255);
+     font-family: 'Francois One', 'Arial';
+
+  }
+
+}
