@@ -1,6 +1,6 @@
 # WebProject
-This is my first  complete web project
-Im currently using an venv for some deps and libs:
+
+Backend:
 
     asgiref             3.6.0
     Django              4.2
@@ -12,3 +12,8 @@ Im currently using an venv for some deps and libs:
     setuptools          65.5.0
     sqlparse            0.4.3
     tzdata              2023.3
+
+Frontend:
+ "react": "^18.2.0",
+ "react-dom": "^18.2.0",
+ "react-scripts": "0.9.5"
