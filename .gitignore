@@ -131,7 +131,8 @@ dmypy.json
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-frontend/sample-react-app/node_modules
+frontend/node_modules
+frontend/build
 
 # testing
 /coverage
@@ -145,4 +146,3 @@ frontend/sample-react-app/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
