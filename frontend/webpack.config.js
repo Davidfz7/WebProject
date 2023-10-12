@@ -6,7 +6,10 @@ const scssRules = {
   use: ["style-loader", "css-loader", "sass-loader"],
 };
 
-const jsxEntry = "./src/index.jsx"; // Una sola entrada
+const fileRules = {
+  test: /\.(jpe?g|png|gif|svg)$/i,
+  loader: "file-loader",
+};
 
 const jsxRules = {
   test: /\.jsx$/,
@@ -16,7 +19,9 @@ const jsxRules = {
   },
 };
 
-const loadersRules = [scssRules, jsxRules];
+const jsxEntry = "./src/index.jsx"; // Una sola entrada
+
+const loadersRules = [scssRules, jsxRules, fileRules];
 
 module.exports = {
   entry: jsxEntry, // Solo una entrada

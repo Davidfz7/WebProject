@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$homeFont: "Lato", sans-serif;
+$headerHeight: 10vh;
+$contentHeight: 90vh;
+$footerHeight: 20vh;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: $homeFont;
+  .header-div-home {
+    border: solid yellow;
+    height: $headerHeight;
+  }
+
+  .content-div-home {
+    height: $contentHeight;
+    border: solid green;
+  }
+}

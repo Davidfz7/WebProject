@@ -1,5 +1,5 @@
-import { Footer } from "./components/Footer.jsx";
+import { Home } from "./containers/Home.jsx";
 
 export function App() {
-  return <Footer />;
+  return <Home />;
 }
