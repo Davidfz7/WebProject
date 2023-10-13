@@ -2,6 +2,12 @@ import "../styles/Footer.scss";
 import githubIcon from "../resources/icons/item1.png";
 import xIcon from "../resources/icons/item2.png";
 import tournyIcon from "../resources/icons/item3.png";
+import { useState } from "react";
+import radurIcon from "../resources/icons/developersIcons/radur.png";
+import chepeIcon from "../resources/icons/developersIcons/chepe.png";
+import davidIcon from "../resources/icons/developersIcons/david.png";
+import kendallIcon from "../resources/icons/developersIcons/kendall.png";
+
 const gitPath = "https://github.com/Davidfz7/WebProject";
 const developersReps = [
   "https://github.com/Davidfz7",
@@ -45,52 +51,81 @@ export function Footer() {
 }
 
 function Developers() {
+  console.log(useState);
   return (
     <div className="developers-div">
-      <strong>Developers:</strong>
       <ul className="developer-list">
         <li>
+          <img
+            src={kendallIcon}
+            alt="github"
+            style={{ border: "solid brown" }}
+          />
           <div className="developer-list-item">
-            <strong>Luis Xan</strong>
-            <button>
-              <a href={developersReps[3]} target="_blank">
-                Follow
-              </a>
-            </button>
+            <strong>
+              Luis Xan <br />
+              <span>@radur1112</span>
+            </strong>
+
+            <ButtonFollow />
           </div>
         </li>
         <li>
+          <img src={chepeIcon} alt="github" style={{ border: "solid red" }} />
+
           <div className="developer-list-item">
-            <strong>Jos242</strong>
-            <button>
-              <a href={developersReps[2]} target="_blank">
-                Follow
-              </a>
-            </button>
+            <strong>
+              Jos242 <br /> <span>@radur1112</span>
+            </strong>
+            <ButtonFollow />
           </div>
         </li>
         <li>
+          <img src={radurIcon} alt="github" style={{ border: "solid black" }} />
+
           <div className="developer-list-item">
-            <strong>Radur1112</strong>
-            <button>
-              <a href={developersReps[1]} target="_blank">
-                Follow
-              </a>
-            </button>
+            <strong>
+              Radur1112 <br />
+              <span>@radur1112</span>
+            </strong>
+            <ButtonFollow />
           </div>
         </li>
 
         <li>
+          <img src={davidIcon} alt="github" style={{ border: "solid black" }} />
+
           <div className="developer-list-item">
-            <strong>Davidfz7</strong>
-            <button>
-              <a href={developersReps[0]} target="_blank">
-                Follow
-              </a>
-            </button>
+            <strong>
+              Davidfz7 <br /> <span>@radur1112</span>
+            </strong>
+
+            <ButtonFollow />
           </div>
         </li>
       </ul>
     </div>
+  );
+}
+
+function ButtonFollow() {
+  let text = "Follow";
+  let [Following, setFollowing] = useState(false);
+
+  const status = () => {
+    setFollowing(!Following);
+  };
+
+  if (Following) {
+    text = "Following";
+  } else {
+    text = "Follow";
+  }
+  return (
+    <a>
+      <button onClick={status}>
+        <strong>{text}</strong>
+      </button>
+    </a>
   );
 }
