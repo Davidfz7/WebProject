@@ -64,7 +64,11 @@ function Developers() {
           <div className="developer-list-item">
             <strong>
               Luis Xan <br />
-              <span>@radur1112</span>
+              <span>
+                <a href={developersReps[3]} target="_blank">
+                  @luiskendall/github
+                </a>
+              </span>
             </strong>
 
             <ButtonFollow />
@@ -75,7 +79,12 @@ function Developers() {
 
           <div className="developer-list-item">
             <strong>
-              Jos242 <br /> <span>@radur1112</span>
+              Jos242 <br />
+              <span>
+                <a href={developersReps[2]} target="_blank">
+                  @jos242/github
+                </a>
+              </span>
             </strong>
             <ButtonFollow />
           </div>
@@ -86,7 +95,11 @@ function Developers() {
           <div className="developer-list-item">
             <strong>
               Radur1112 <br />
-              <span>@radur1112</span>
+              <span>
+                <a href={developersReps[1]} target="_blank">
+                  @radur1112/github
+                </a>
+              </span>
             </strong>
             <ButtonFollow />
           </div>
@@ -97,7 +110,12 @@ function Developers() {
 
           <div className="developer-list-item">
             <strong>
-              Davidfz7 <br /> <span>@radur1112</span>
+              Davidfz7 <br />{" "}
+              <span>
+                <a href={developersReps[0]} target="_blank">
+                  @davidfz7/github
+                </a>
+              </span>
             </strong>
 
             <ButtonFollow />

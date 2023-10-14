@@ -83,24 +83,28 @@ footer {
     .developer-list-item {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 10px;
       strong {
         flex: 1 1 0;
         span {
           opacity: 0.6;
+          a {
+            color: white;
+            text-decoration: underline;
+          }
         }
       }
 
       button {
         border: none;
         color: black;
+        margin-top: 4px;
         min-height: 30px;
         max-height: 50px;
         width: 120px;
         font-size: 18px;
         border-radius: 10px;
-        margin-left: 15px;
       }
     }
     a {

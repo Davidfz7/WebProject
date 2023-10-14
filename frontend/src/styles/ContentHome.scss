@@ -1,0 +1,18 @@
+.content-div {
+  height: 100%;
+  display: flex;
+
+  .carrousel-landing-page {
+    width: calc(50% - 40px);
+    height: 100%;
+    background: #ff005b;
+  }
+  .content-right {
+    width: calc(50% + 40px);
+    height: 100%;
+    background: #17274c;
+    border-left: 80px solid #ff005b;
+    border-bottom: 2000px solid transparent;
+    box-sizing: border-box;
+  }
+}
