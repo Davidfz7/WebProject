@@ -28,6 +28,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
   },
-  plugins: [new HtmlWebpackPlugin({ template: "/templates/index.html" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./templates/index.html" })],
   module: { rules: loadersRules },
 };
