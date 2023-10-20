@@ -132,7 +132,9 @@ dmypy.json
 
 # dependencies
 frontend/node_modules
+frontend/sample-react-app/node_modules
 frontend/build
+node_modules
 
 # testing
 /coverage
